@@ -1,0 +1,29 @@
+section {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #motion {
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    animation-name: box;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes box {
+    0%   {background-color:black; left:0%; top:0%;}
+    25%  {background-color:grey; left:83.5%; top:0%;}
+    50%  {background-color:black; left:83.5%; top:83.5%;}
+    75%  {background-color:grey; left:0%; top:83.5%;}
+    100% {background-color:black; left:0px; top:0px;}
+  }
